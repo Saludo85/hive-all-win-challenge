@@ -1,0 +1,182 @@
+/* ===========================
+   HIVE ALL WIN CHALLENGE
+   style.css Part 1
+   =========================== */
+
+:root{
+    --yellow:#FFC62E;
+    --yellow2:#FFD95E;
+    --dark:#121212;
+    --panel:#1E1E1E;
+    --panel2:#2A2A2A;
+    --text:#F8F8F8;
+    --green:#47d764;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:"Press Start 2P", cursive;
+
+    color:var(--text);
+
+    background:
+    radial-gradient(circle at center,
+    #1f1f1f 0%,
+    #171717 40%,
+    #101010 100%);
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+}
+
+/* ハニカム風背景 */
+
+.background{
+
+    position:fixed;
+
+    inset:0;
+
+    opacity:.12;
+
+    background-image:
+
+    radial-gradient(circle at 25px 25px,
+    rgba(255,198,46,.35) 3px,
+    transparent 3px),
+
+    radial-gradient(circle at 75px 75px,
+    rgba(255,198,46,.35) 3px,
+    transparent 3px);
+
+    background-size:100px 100px;
+
+    pointer-events:none;
+
+}
+
+/* タイトル */
+
+header{
+
+    text-align:center;
+
+    padding-top:45px;
+
+    padding-bottom:20px;
+
+}
+
+header h1{
+
+    color:var(--yellow);
+
+    font-size:32px;
+
+    text-shadow:
+    0 0 8px rgba(255,198,46,.7),
+    0 0 20px rgba(255,198,46,.3);
+
+    margin-bottom:18px;
+
+}
+
+header h2{
+
+    color:white;
+
+    font-size:15px;
+
+    letter-spacing:2px;
+
+}
+
+/* Progress */
+
+.progress-card{
+
+    width:min(92%,500px);
+
+    margin:auto;
+
+    background:linear-gradient(
+    180deg,
+    var(--panel2),
+    var(--panel));
+
+    border:4px solid var(--yellow);
+
+    border-radius:18px;
+
+    padding:22px;
+
+    box-shadow:
+
+    0 0 20px rgba(255,198,46,.15);
+
+}
+
+.progress-title{
+
+    text-align:center;
+
+    color:var(--yellow);
+
+    margin-bottom:18px;
+
+    font-size:13px;
+
+}
+
+.progress-bar{
+
+    width:100%;
+
+    height:22px;
+
+    background:#333;
+
+    border-radius:50px;
+
+    overflow:hidden;
+
+    border:2px solid #444;
+
+}
+
+#progressFill{
+
+    width:0%;
+
+    height:100%;
+
+    background:linear-gradient(
+    90deg,
+    #ffcc33,
+    #ffe066);
+
+    transition:.4s;
+
+}
+
+#progressText{
+
+    margin-top:16px;
+
+    text-align:center;
+
+    font-size:13px;
+
+}
